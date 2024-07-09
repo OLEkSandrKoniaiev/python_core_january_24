@@ -117,36 +117,57 @@ print('(average)>\t', average([1, 2, 3, 4]))
 
 
 # 6)
+def find_min(my_list):
+    min_number = my_list[0]
+    for number in my_list:
+        if number == 'X':
+            continue
+        if number < min_number:
+            min_number = number
+    print(min_number)
+
+
+def delete_duplicates(my_list):
+    my_set = set(my_list)
+    my_list = list(my_set)
+    print(my_list)
+
+
+def every_4_is_x(my_list):
+    for index, num in enumerate(my_list):
+        if num == 'X':
+            continue
+        if index % 4 == 0 and index != 0:
+            my_list[index] = 'X'
+    print(my_list)
+
+
 def print_square(size):
-    line = ''
-    void_line = ''
-    for i in range(size):
-        line += '*'
+    if size < 2:
+        print("Розмір повинен бути більше ніж два")
+        return
 
-    for i in range(size - 2):
-        void_line += ' '
+    print('*' * size)
 
-    void_line.center(size, '*')
+    for _ in range(size - 2):
+        print('*' + ' ' * (size - 2) + '*')
 
-    print(line)
-    for i in range(size - 2):
-        print(void_line)
-    print(line)
+    print('*' * size)
 
 
 def multiplication_table():
     i = 1
     while i < 9:
+        number_line = []
         j = 1
-        number_array = []
         while j <= 9:
-            number_array.append(f"{i * j:3}")  # Форматуємо числа з вирівнюванням по 2 символи
+            number_line.append(f"{i * j:2}")
             j += 1
-        print(" ".join(number_array))
+        print(" ".join(number_line))
         i += 1
 
 
-print('Вітання в меню комплексного завдання!\nОберіть дію зі списком [22, 3,5,2,8,2,-23, 8,23,5]:')
+print('\nВітання в меню комплексного завдання!\nОберіть дію зі списком [22, 3,5,2,8,2,-23, 8,23,5]:')
 print('1. Вивести мінімальне число\n'
       '2. Видалити усі дублікати\n'
       '3. Замінити кожне 4-те значення на \'X\'\n'
@@ -158,30 +179,26 @@ is_going = True
 our_list = [22, 3, 5, 2, 8, 2, -23, 8, 23, 5]
 while is_going:
     user_choice = input('\n: ')
+
     if user_choice == '1':
-        min_number = our_list[0]
-        for num in our_list:
-            if num == 'X':
-                continue
-            if num < min_number:
-                min_number = num
-        print(min_number)
+        find_min(our_list)
+
     elif user_choice == '2':
-        our_set = set(our_list)
-        our_list = list(our_set)
-        print(our_list)
+        delete_duplicates(our_list)
+
     elif user_choice == '3':
-        for num in our_list:
-            if num % 4 == 0:
-                num = 'X'
-        print(our_list)
+        every_4_is_x(our_list)
+
     elif user_choice == '4':
         user_input = input('Розмір: ')
         print_square(int(user_input))
+
     elif user_choice == '5':
         multiplication_table()
+
     elif user_choice == '6':
         is_going = False
         print('Бажаю гарного дня!')
+
     else:
         print('Будь ласка введіть правильне число')
