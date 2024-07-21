@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="082370b6-056a-4d0d-8a55-66333451934f" name="Changes" comment="additional 2">
-      <change afterPath="$PROJECT_DIR$/homework3.py" afterDir="false" />
+    <list default="true" id="082370b6-056a-4d0d-8a55-66333451934f" name="Changes" comment="homework 3">
+      <change afterPath="$PROJECT_DIR$/homework4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework4/emails.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework4/gmails.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework4/shopping_notebook.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +53,7 @@
     "Python.homework1.executor": "Run",
     "Python.homework2.executor": "Run",
     "Python.homework3.executor": "Run",
+    "Python.homework4.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -62,6 +66,36 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="homework4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_core_january_24" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.homework4" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +116,8 @@
       <workItem from="1720550321597" duration="441000" />
       <workItem from="1720776935872" duration="15008000" />
       <workItem from="1720857386174" duration="56000" />
-      <workItem from="1721113748819" duration="4549000" />
+      <workItem from="1721113748819" duration="5183000" />
+      <workItem from="1721313183563" duration="17015000" />
     </task>
     <task id="LOCAL-00001" summary="homework 1">
       <option name="closed" value="true" />
@@ -116,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720814281132</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="homework 3">
+      <option name="closed" value="true" />
+      <created>1721118348705</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721118348705</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,11 +170,13 @@
     <MESSAGE value="homework 1 final" />
     <MESSAGE value="homework 2 final" />
     <MESSAGE value="additional 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="additional 2" />
+    <MESSAGE value="homework 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework 3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_core_january_24$homework1.coverage" NAME="homework1 Coverage Results" MODIFIED="1720550627553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_core_january_24$additional2.coverage" NAME="additional2 Coverage Results" MODIFIED="1720813802380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_core_january_24$homework4.coverage" NAME="homework4 Coverage Results" MODIFIED="1721601236761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_core_january_24$homework2.coverage" NAME="homework2 Coverage Results" MODIFIED="1720799729527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_core_january_24$homework3.coverage" NAME="homework3 Coverage Results" MODIFIED="1721118235771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
